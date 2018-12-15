@@ -1,5 +1,5 @@
 def BW_reverse(a, count)
-  (0..(a.length-2)).reverse_each do |i|
+  (0..(a.length-2-count/2)).reverse_each do |i|
     if a[i] + a[i+1] == "BW"
       tmp = a[i]
       a[i] = a[i+1]
