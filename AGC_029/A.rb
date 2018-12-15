@@ -7,8 +7,7 @@ def BW_reverse(a, length, count)
       return BW_reverse(a, length, count)
     end
   end
-end
-return count
+  return count
 end
 
 a = gets.chomp.split("")
