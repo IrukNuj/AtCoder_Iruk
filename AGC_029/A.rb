@@ -1,9 +1,8 @@
 def BW_reverse(a, length, count)
-  (0..(length-count/2)).reverse_each do |i|
+  (0..(length-@count/2)).reverse_each do |i|
     if a[i] == "B" && a[i+1] == "W"
-      a[i] = "W"
-      a[i+1] = "B"
-      count = count + 1
+      a[i], a[i+1] = "W", "B"
+      count += 1
       return BW_reverse(a, length, count)
     end
   end
