@@ -1,16 +1,13 @@
-def BW_reverse(a, count)
-  (0..(LENGTH-count/2)).reverse_each do |i|
+a = gets.chomp
+count = 0
+
+a.length.times do
+  (0..(a.length)).reverse_each do |i|
     if a[i] == "B" && a[i+1] == "W"
       a[i], a[i+1] = "W", "B"
       count += 1
-      return BW_reverse(a, count)
     end
   end
-  return count
 end
 
-a = gets.chomp.split("")
-LENGTH = a.length - 2
-count = 0
-
-puts BW_reverse(a, count)
+puts count
