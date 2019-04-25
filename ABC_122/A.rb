@@ -1,0 +1,1 @@
+puts ({'A' => :T, 'T' => :A, 'C' => :G, 'G' => :C}[gets.chomp])
