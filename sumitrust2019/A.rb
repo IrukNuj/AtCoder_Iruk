@@ -1,0 +1,1 @@
+puts gets.split.map(&:to_i).first == gets.split.map(&:to_i).first ? "0" : "1"
